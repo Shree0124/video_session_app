@@ -52,7 +52,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
   return await Get.bottomSheet<DateTime>(
     StatefulBuilder(
       builder: (context, setState) {
-        // Display text for buttons
+    
         String getDateText() =>
             selectedDate != null
                 ? "${selectedDate!.day}/${selectedDate!.month}/${selectedDate!.year}"
@@ -80,7 +80,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              // Header
+      
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -97,7 +97,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
               ),
               const SizedBox(height: 16),
 
-              // Date Button
+
               InkWell(
                 onTap: () async {
                   final pickedDate = await showDatePicker(
@@ -115,7 +115,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   margin: const EdgeInsets.symmetric(vertical: 8),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF1B5694), // button color
+                    color: const Color(0xFF1B5694), 
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Center(
@@ -130,7 +130,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
                 ),
               ),
 
-              // Time Button
+        
               InkWell(
                 onTap: () async {
                   final pickedTime = await showTimePicker(
@@ -146,7 +146,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
                   padding: const EdgeInsets.symmetric(vertical: 16),
                   margin: const EdgeInsets.symmetric(vertical: 8),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF1B5694), // button color
+                    color: const Color(0xFF1B5694), 
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Center(
@@ -163,7 +163,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
 
               const SizedBox(height: 20),
 
-              // Confirm Button
+       
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
@@ -224,7 +224,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            // ===== HEADER =====
+       
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -243,7 +243,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
             ),
             const SizedBox(height: 16),
 
-            // ===== SESSION TITLE =====
+  
             TextField(
               controller: titleController,
               decoration: InputDecoration(
@@ -260,7 +260,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
             ),
             const SizedBox(height: 12),
 
-            // ===== DATE & TIME =====
+      
             TextField(
               controller: dateTimeController,
               readOnly: true,
@@ -286,13 +286,13 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
             ),
             const SizedBox(height: 20),
 
-            // ===== ACTION BUTTON =====
+           
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFFE8F1FF), // light blue
+                    backgroundColor: const Color(0xFFE8F1FF),
                     elevation: 0,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(6),
@@ -322,7 +322,7 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xFF2563EB), // dark blue text
+                      color: Color(0xFF2563EB), 
                     ),
                   ),
                 ),
@@ -337,8 +337,6 @@ Future<DateTime?> _pickDateTimeFromBottomSheet(
 }
 
 
-
-  // ================= UI =================
   @override
   Widget build(BuildContext context) {
     return Scaffold(
