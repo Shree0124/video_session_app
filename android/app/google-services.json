@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "842136291476",
+    "project_id": "videosessionapp",
+    "storage_bucket": "videosessionapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842136291476:android:5487614cf3e389ebc0cc81",
+        "android_client_info": {
+          "package_name": "com.example.video_session_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBS5IMmNcVoWnP3fw9Ae0yBGxwI4ZuUZC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
